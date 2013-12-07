@@ -1,17 +1,17 @@
 package com.example.tweetbookplus;
 import android.app.Fragment;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 
-public class GooglePlusHelper extends Fragment implements SocialNetworkHelper {
+public class GooglePlusFragment extends Fragment{
 
-	public GooglePlusHelper(){
+	public GooglePlusFragment(){
 		
 	}
+	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -20,14 +20,5 @@ public class GooglePlusHelper extends Fragment implements SocialNetworkHelper {
          
         return rootView;
     }
-	@Override
-	public boolean isAppInstalled(PackageManager packageManager) {
-		try{
-	        packageManager.getApplicationInfo("com.google.android.apps.plus", 0);
-	        return true;
-	    } catch (PackageManager.NameNotFoundException e){
-	        return false;
-	    }
-	}
 
 }

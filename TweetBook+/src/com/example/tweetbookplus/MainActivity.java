@@ -164,13 +164,13 @@ public class MainActivity extends Activity {
 			fragment = new TweetBookFragment();
 			break;
 		case 1:
-			fragment = new TwitterHelper();
+			fragment = new TwitterFragment();
 			break;
 		case 2:
-			fragment = new FacebookHelper();
+			fragment = new FacebookFragment();
 			break;
 		case 3:
-			fragment = new GooglePlusHelper();
+			fragment = new GooglePlusFragment();
 			break;
 		
 		default:

@@ -2,7 +2,11 @@ import android.content.pm.PackageManager;
 
 
 public class TwitterHelper implements SocialNetworkHelper{
-
+	
+	protected TwitterHelper(){
+		
+	}
+	
 	@Override
 	public boolean isAppInstalled(PackageManager packageManager) {
 		try{
@@ -12,5 +16,5 @@ public class TwitterHelper implements SocialNetworkHelper{
 	        return false;
 	    }
 	}
-
+	
 }

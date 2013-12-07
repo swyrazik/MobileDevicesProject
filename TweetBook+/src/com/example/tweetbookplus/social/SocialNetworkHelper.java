@@ -1,4 +1,4 @@
-package com.example.tweetbookplus;
+package com.example.tweetbookplus.social;
 import android.content.pm.PackageManager;
 
 

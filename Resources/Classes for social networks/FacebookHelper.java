@@ -2,7 +2,11 @@ import android.content.pm.PackageManager;
 
 
 public class FacebookHelper implements SocialNetworkHelper{
-
+	
+	protected FacebookHelper(){
+		
+	}
+	
 	@Override
 	public boolean isAppInstalled(PackageManager packageManager) {
 		try{
@@ -12,5 +16,5 @@ public class FacebookHelper implements SocialNetworkHelper{
 	        return false;
 	    }
 	}
-
+	
 }
