@@ -170,7 +170,7 @@ public class MainActivity extends Activity {
 			fragment = new FacebookFragment();
 			break;
 		case 3:
-			fragment = new GooglePlusFragment();
+			fragment = new TumblrFragment();
 			break;
 		
 		default:

@@ -64,7 +64,7 @@ public final class R {
         public static final int activity_main=0x7f030000;
         public static final int drawer_list_item=0x7f030001;
         public static final int fragment_facebook=0x7f030002;
-        public static final int fragment_google=0x7f030003;
+        public static final int fragment_tumblr=0x7f030003;
         public static final int fragment_tweetbook=0x7f030004;
         public static final int fragment_twitter=0x7f030005;
     }

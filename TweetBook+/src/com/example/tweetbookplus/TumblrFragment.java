@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class GooglePlusFragment extends Fragment{
+public class TumblrFragment extends Fragment{
 
-	public GooglePlusFragment(){
+	public TumblrFragment(){
 		
 	}
 	
@@ -16,7 +16,7 @@ public class GooglePlusFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_google, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_tumblr, container, false);
          
         return rootView;
     }
