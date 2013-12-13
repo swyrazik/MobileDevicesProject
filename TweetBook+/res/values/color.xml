@@ -2,8 +2,9 @@
 <resources>
     <color name="list_item_title">#000000</color>
     <color name="list_background">#FCFCFC</color>
-    <color name="list_background_pressed">#CDCDCD</color>
-    <color name="list_divider">#CCCCCC</color>
+    <color name="list_background_pressed">#7AC5CD</color>
+    <color name="list_divider">#7AC5CD</color>
     <color name="counter_text_bg">#626262</color>
-    <color name="counter_text_color">#CDCDCD</color>
+    <color name="end_up">#FFFFFF</color>
+    <color name="counter_text_color">#FFFFFF</color>
 </resources>

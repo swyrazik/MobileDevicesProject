@@ -11,7 +11,7 @@
         <item >TweetBook+</item>
         <item >Twitter</item>
         <item >Facebook</item>
-        <item >Google+</item>
+        <item >Tumblr</item>
         
     </string-array>
     
@@ -21,11 +21,18 @@
         <item>@drawable/social_icons</item>
         <item>@drawable/ic_twitter</item>
         <item>@drawable/ic_facebook</item>
-        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_tumblr</item>
         
     </array>
     
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-
+    
+    
+    <!-- For login -->
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+	<string name="forgot_pass">Forgot password?</string>
+	
+	
 </resources>
