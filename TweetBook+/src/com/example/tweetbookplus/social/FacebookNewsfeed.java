@@ -3,6 +3,7 @@ package com.example.tweetbookplus.social;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class FacebookNewsfeed {
 	
@@ -41,9 +42,20 @@ public class FacebookNewsfeed {
 	//             Other Methods              //
 	////////////////////////////////////////////
 	
-	public void update(JSONArray data){
+	public void update(JSONObject data){
 		//TODO add new posts to the list, if any
 		//should first check if a post already exists in the list
+				
+		JSONArray postData = data.optJSONArray("data");
+		if (postData == null)
+			return;
+				
+		if (posts.isEmpty()){
+			for (int i = 0; i < postData.length(); i++){
+				posts.add(new FacebookPost(postData.optJSONObject(i)));
+			}
+			return;
+		}
 	}
 	
 }

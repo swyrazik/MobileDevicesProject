@@ -1,5 +1,8 @@
 package com.example.tweetbookplus;
 
+import com.example.tweetbookplus.social.SocialNetworkManager;
+import com.facebook.Session;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,7 +36,7 @@ public class WelcomeView extends Activity implements OnClickListener {
 		int button=0;
 		switch(v.getId())
 		{
-		case R.id.facebook_but: button=0;
+		case R.id.facebook_but: button=0; login(v);
 		break;
 		case R.id.twitter_button:button=1;
 		break;
@@ -47,15 +50,31 @@ public class WelcomeView extends Activity implements OnClickListener {
 		
 	}
 
-
-
-	
-
-
- 
-	
- 
+	public void login(View view){
+		
+		SocialNetworkManager.Instance().facebook.login(this);
+//		try{
+//			//Toast t = Toast.makeText(this, SocialNetworkManager.Instance().facebook.getNewsfeed()[1].getMessage(), Toast.LENGTH_SHORT);
+//			//t.show();
+//		} catch (Exception e){
+//			
+//		}
 	}
+	
+	public void logout(View view){
+		Log.d("girls","logout");
+		Session s = Session.getActiveSession();		
+		if (s != null)
+			s.closeAndClearTokenInformation();
+	}
+
+	
+
+
+ 
+	
+ 
+}
  
  
 

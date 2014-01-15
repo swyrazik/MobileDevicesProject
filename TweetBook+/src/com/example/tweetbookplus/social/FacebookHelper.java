@@ -1,6 +1,7 @@
 package com.example.tweetbookplus.social;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -33,7 +34,7 @@ public class FacebookHelper implements SocialNetworkHelper{
 	}
 	
 	public FacebookPost[] getUpdatedNewsfeed(){
-		JSONArray data = null;
+		JSONObject data = null;
 		// TODO: get data from sessionManager
 		newsfeed.update(data);
 		return newsfeed.getPosts();
@@ -41,6 +42,14 @@ public class FacebookHelper implements SocialNetworkHelper{
 	
 	public FacebookUser getCurrentUser(){
 		return currentUser;
+	}
+	
+	////////////////////////////////////////////
+	//               Setters                  //
+	////////////////////////////////////////////
+	
+	protected void setCurrentUser(FacebookUser currentUser){
+		this.currentUser = currentUser;
 	}
 	
 	////////////////////////////////////////////
@@ -73,6 +82,10 @@ public class FacebookHelper implements SocialNetworkHelper{
 	
 	public boolean logout(boolean clearTokenInformation){
 		return sessionManager.closeSession(clearTokenInformation);
+	}
+	
+	public void updateNewsfeed(JSONObject data){
+		newsfeed.update(data);
 	}
 	
 	////////////////////////////////////////////
