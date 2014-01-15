@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/signpost-commonshttp4-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/signpost-core-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Vlad/Desktop/tumblrStuff/commons-codec-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Vlad/Desktop/tumblrStuff/commons-lang3-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Vlad/Desktop/tumblrStuff/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Vlad/Desktop/tumblrStuff/junit-4.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Vlad/Desktop/tumblrStuff/scribe-1.3.2.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
