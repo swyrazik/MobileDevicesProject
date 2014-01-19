@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"    
+    android:windowActionBar="false"
+    android:windowTitleSize="0dp"
+    android:layout_weight="1"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+    
+    <ImageButton
+        android:id="@+id/facebook_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300sp"        
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/facebook_button1" 
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center"/>
+    
+     <ImageButton
+        android:id="@+id/twitter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350sp"
+       
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/twitter_button1" 
+        android:layout_centerHorizontal="true" 
+        android:layout_gravity="center_horizontal|center"/>
+     
+     
+     <!--   android:layout_marginTop="450sp" -->
+     <ImageButton
+        android:id="@+id/tumblr_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="400sp"
+        android:layout_gravity="center_horizontal|center"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/tumblr_button1"
+        android:layout_centerHorizontal="true"
+        />
+
+     <ImageButton
+         android:id="@+id/news"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/facebook_but"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="143dp"
+         android:paddingBottom="1dp"
+         android:paddingLeft="1dp"
+         android:paddingRight="1dp"
+         android:paddingTop="1dp"
+         android:src="@drawable/get_feed" />
+  
+</RelativeLayout>
